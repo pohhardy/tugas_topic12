@@ -1,0 +1,13 @@
+php artisan crud:generate attendance --fields='user_id#integer; class#string; room_id#integer;location_id#integer; attandence_collect_at#datetime;attandence_return_at#datetime;marker_return_at#datetime; marker_collect_at#datetime;' --view-path=admin --controller-namespace=App\\Http\\Controllers\\Admin --route-group=admin --form-helper=html
+
+php artisan crud:generate reservation --fields='user_id#integer; reservation_code#string; room_id#integer;start#date; end#date;description#string; reservation_status_id#integer;' --view-path=admin --controller-namespace=App\\Http\\Controllers\\Admin --route-group=admin --form-helper=html
+
+
+php artisan crud:generate schedule --fields='room_id#integer; leason_id#integer; location_id#integer;start#date; end#date;' --view-path=admin --controller-namespace=App\\Http\\Controllers\\Admin --route-group=admin --form-helper=html
+
+php artisan crud:generate missing_items_status 
+--fields='name#string;' 
+--view-path=admin --controller-namespace=
+App\\Http\\Controllers\\Admin 
+--route-group=admin 
+--form-helper=html
